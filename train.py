@@ -37,7 +37,7 @@ def load_model(args, checkpoint=None, config=None):
     logger.info(model)
 
     if config['n_gpu'] > 1:
-        model = torch.nn.DataParallel(model)
+        model = torch.nn.DataParallel(model).module
     if resume:
         model.load_state_dict(state_dict)
 
