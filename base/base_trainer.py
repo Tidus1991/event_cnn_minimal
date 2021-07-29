@@ -67,7 +67,7 @@ class BaseTrainer:
                 k = f'{k[4:]}/valid'
             else:
                 k += '/train'
-            self.writer.writer.add_scalar(f'epoch_{k}', v, global_step=epoch)
+            self.writer.add_scalar(f'epoch_{k}', v, global_step=epoch)
 
     def train(self):
         """
