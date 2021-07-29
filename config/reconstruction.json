@@ -72,7 +72,6 @@
                         "RandomFlip": {}
                     },
                     "num_bins": 5,
-                    "combined_voxel_channels": false
                 }
             }
         }
