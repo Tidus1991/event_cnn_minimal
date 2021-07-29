@@ -27,7 +27,7 @@
             "pin_memory": true,
             "sequence_kwargs": {
                 "sequence_length": 40,
-                "dataset_type": "HDF5Dataset",
+                "dataset_type": "DynamicHDF5Dataset",
                 "proba_pause_when_running": 0.05,
                 "proba_pause_when_paused": 0.9,
                 "normalize_image": false,
@@ -61,7 +61,7 @@
             "pin_memory": true,
             "sequence_kwargs": {
                 "sequence_length": 320,
-                "dataset_type": "HDF5Dataset",
+                "dataset_type": "DynamicHDF5Dataset",
                 "normalize_image": true,
                 "dataset_kwargs": {
                     "max_length": 320,
